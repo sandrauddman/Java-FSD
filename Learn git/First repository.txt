@@ -1,0 +1,4 @@
+
+In this file I'm writing text that will be uploaded to a repository I think. 
+This I will be able to see on github.com
+Wish me luck!
