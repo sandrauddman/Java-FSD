@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>how to create functions</h1>
+    <script>
+        //function without arguments
+        function display(){
+            console.log("diplay function called")
+        }
+
+        display();
+
+
+        // function with parameters
+        function add(a,b){
+            let x=a;
+            let y=b;
+
+            return x+y;
+        }
+        const result =add(89,100);
+        document.write("added function called", result);
+        
+
+
+        //IIFE function. a function invoked directly. No need to name the function.
+        (function(){console.log("Hello World!")})();
+
+
+        //A function returning a function???pretty wierd shiet. how come you can save
+        //  the function as a var? how come you don't need to save it as a var?
+
+        function sub(a,b){
+            let result =a-b;
+            return function(){console.log("this is the result of sub",result)}
+
+        }
+         xyz=sub(45,5);
+         xyz();
+
+        //arrow function
+
+        funkName=()=>{console.log("Hello wolrd arrow function. and the function has a name")}
+        funkName();
+
+        (()=>{console.log("this is an arrow function with IIEF")})();
+
+
+
+
+    </script>
+</body>
+</html>

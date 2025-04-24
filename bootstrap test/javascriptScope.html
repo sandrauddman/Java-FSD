@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>function scope</h1>
+    <script>
+        function greetings(){
+            var name="sandra";
+            console.log("name: ", name);
+
+            if(true){
+                let num =10;
+                var num1=30;
+            }
+            
+            console.log("num1: ",num1);
+        }
+
+
+        greetings();
+    </script>
+</body>
+</html>

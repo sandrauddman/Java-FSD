@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array methods</h1>
+    <script>
+        var numbers=[1,2,3,4,5,6];
+        console.log("list with numbes", numbers)
+        //push
+        numbers.push(7);
+        console.log("list with numbers  push ", numbers)
+
+        //pop
+        numbers.pop();
+        console.log("list with numbes pop", numbers)
+
+        
+        //Shift
+
+        numbers.shift();
+        console.log("list with numbes shift", numbers)
+
+        //unshift
+        numbers.unshift(1);
+        console.log("list with numbes unshift", numbers)
+        
+        //function is using restvariable. sum(...)indicates you
+        //can add any number of parameters.
+        function sum(...x){
+            var tot=0;
+            for(let i of x){
+                tot=tot+i;
+            }
+            return tot;
+            
+        }
+        console.log("function returns sum of parameters added: ",sum(1,100,100,100));
+        
+
+        //default params
+
+        function adding(a,b){
+            return a+b;
+        }
+        //b=3 is a default param. if only one param is passed then b=3 otherwise it will
+        //  count b as param
+        function adding2(a, b=3){
+            return a+b;
+        }
+        console.log("with two param 5,7 : ",adding2(5,7))
+        console.log("with one param 5 : ",adding2(5))
+    </script>
+    
+</body>
+</html>

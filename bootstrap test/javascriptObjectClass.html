@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        //class and object
+        class Student{
+
+            constructor(id ,name){
+                this.id=id;
+                this.name=name;
+
+            }
+
+            display(){
+                console.log("ID : ",this.id);
+                console.log("Name : ",this.name)
+
+            }
+
+        
+        }
+
+        let s1=new Student(1, "sandra");
+        
+        s1.display();
+    </script>
+    <div>
+
+        <!-- Calculator code-->
+        <h1>Calculator</h1>
+        <script>
+            alert("A calculator")
+            var numb1= parseInt(prompt("add a number for summation"));
+            var numb2= parseInt(prompt("add a  second number for summation"));
+            
+            function add(a,b){
+                
+                
+                return a+b;
+            }
+
+            document.write("Result: ", add(numb1,numb2))
+        </script>
+    </div>
+</body>
+</html>
